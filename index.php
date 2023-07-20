@@ -89,7 +89,7 @@
                 <p class="fondo-amarillo">Envianos tu consulta >></p>
             </div>
 
-            <form action="./php/email.php" method="post" class="form-contacto cont-info-contacto">
+            <form action="#" method="post" class="form-contacto cont-info-contacto">
                 <label>Nombre <span>*</span></label>
                 <input type="text" name="nombre" required class="input-form">
                 
@@ -104,6 +104,11 @@
                     <input type="submit" value="Enviar consulta" name="enviar" class="btn-enviar">
                     <input type="reset" value="Borrar" class="btn-borrar">
                 </div>
+                
+                <?php
+                    include("./php/email.php");
+                ?>
+                
             </form>
         </section>
         

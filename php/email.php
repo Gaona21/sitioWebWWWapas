@@ -21,9 +21,9 @@
 
             if($mail){
                 echo "Correo enviado correctamente";
-            }else {
-                echo "Error al enviar el correo";
-            }
+             }//else {
+            //     echo "Error al enviar el correo";
+            // }
         }
     }
 ?>
