@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    font: 400;
+    font-size: 24px;
+    font-family: "roboto",sans-serif;
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    border-top: 5px #fcee21 solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo img{
+    width: 200px;
+    margin-left: 70px;
+}
+
+.nav{
+    width: 50%;
+}
+
+.menu-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-item{
+    width: 100%;
+}
+
+.menu-link{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-link::after{
+    content: "";
+    background-color: #fcee21;
+    position: absolute;
+    display: block;
+    padding: 16px 20px;
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+    z-index: -1;
+}
+
+.menu-link:hover::after{
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+} 
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.encabezado{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cont-info-encabezado{
+    width: 50%;
+    height: 600px;
+}
+
+.titulo{
+    font-size: 64px;
+    line-height: 1.2em;
+    color: black;
+    margin-top: 30px;
+}
+
+.titulo span{
+    font-size: 117px;
+    font-family: "Coiny";
+    color: black;
+}
+
+.sub-titulo{
+    font-size: 27px;
+    margin-top: 25px;
+}
+
+.p-encabezado{
+    font-size: 32px;
+    margin-top: 50px;
+}
+
+.cont-img-encabezado{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cont-img-encabezado img{
+    width: 90%;
+}
+
+.cont-sub-encabezado{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.cont-hijo-sub{
+    width: 49%;
+}
+
+.cont-hijo-sub h3{
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.cont-hijo-sub p{
+    font-size: 28px;
+    color: black;
+}
+
+hr{
+    width: 90%;
+    border: 1px solid #808080;
+    margin: 100px 0px 100px 0px;
+}
+
+.servicios{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cont-img-servicios{
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.cont-img-servicios img{
+    width: 100%;
+}
+
+.cont-info-servicios{
+    width: 49%;
+}
+
+.cont-info-servicios h4{
+    font-size: 55px;
+    color: black;
+}
+
+.cont-info-servicios li, .cont-info-servicios li strong{
+    font-size: 32px;
+    padding-left: 0;
+    margin: 20px 0px 20px 0px;
+}
+
+.contacto{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont-info-contacto{
+    width: 50%;
+}
+
+.cont-info-contacto h4, .cont-info-contacto h4 strong{
+    background-color: black;
+    color: white;
+    font-size: 59px;
+    display: inline;
+    line-height: 1.5em;
+}
+
+.cont-info-contacto p{
+    font-size: 44px;
+    margin-top: 40px;
+}
+
+.form-contacto{
+    width: 45%;
+}
+
+.form-contacto label{
+    font-size: 27px;
+    color: black;
+    display: inline-block;
+    margin: 20px 0px 5px 0px;
+}
+
+.form-contacto label span{
+    font-size: 27px;
+    color: red;
+}
+
+.form-contacto .input-form{
+    width: 90%;
+    height: 50px;
+    border: 2.5px solid;
+}
+
+.form-contacto textarea{
+    display: block;
+    width: 90%;
+    height: 100px;
+    border:2.51px solid;
+}
+
+.cont-btn-form{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.btn-enviar,.btn-borrar{
+    font-size: 32px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 25px 10px 25px;
+}
+
+.btn-enviar:hover,.btn-borrar:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #888888;
+    transition: all ease 1s;
+}
+
+.redes{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:50px 50px;
+}
+
+.footer{
+    width: 100%;
+    height: 70px;
+    background-color: #fcee21;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.titulo-footer{
+    font-size: 44px;
+    font-family: "coiny";
+    color:black;
+    padding-left: 70px;
+}
+
+.email-footer{
+    font-size: 28px;
+    padding-left: 50px;
+}
+
+.titulo-redes p{
+    font-size: 33px;
+    color: #808080;
+}
+
+.cont-img-redes{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cont-img-redes a{
+    display: inline-block;
+    width: 10%;
+}
+
+.cont-img-redes a:hover{
+    transform: translateY(-10px);
+    transition: all ease 50ms;
+}
+
+.cont-img-redes a img{
+    width: 100%;
+}
+
+.fondo-amarillo{
+    background-color: #fcee21;
+    color: black;
+    display: table;
+}
+
+strong{
+    color: black;
+}
