@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Web Guapas</title>
@@ -17,6 +17,10 @@
         </div>
 
         <nav class="nav">
+            
+            <input type="checkbox" id="toggle" class="toggle">
+            <label for="toggle" class="menu-btn">&#9776;</label>         
+        
             <ul class="menu-list">
                 <li class="menu-item"><a href="#" class="menu-link">Inicio</a></li>
                 <li class="menu-item"><a href="#servicios" class="menu-link">Servicios</a></li>
